@@ -332,7 +332,7 @@ class _CameraExampleHomeState extends State<CameraExampleHome>
   String timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
 
   void showInSnackBar(String message) {
-    _scaffoldKey.currentState!.showSnackBar(SnackBar(content: Text(message)));
+    // _scaffoldKey.currentState!.showSnackBar(SnackBar(content: Text(message)));
   }
 
   void onNewCameraSelected(CameraDescription? cameraDescription) async {
@@ -536,7 +536,7 @@ class CameraApp extends StatelessWidget {
     return
       MaterialApp(
         theme: ThemeData(
-          accentTextTheme: TextTheme(body2: TextStyle(color: Colors.white)),
+          // accentTextTheme: TextTheme(body2: TextStyle(color: Colors.white)),
         ),
       home: CameraExampleHome(),
     );
